@@ -32,7 +32,9 @@ export default class Utils {
      * @param {string} key key to parse
      * @returns {KEY}
      */
-    static parseKey = (key?: string): {
+    static parseKey = (
+        key?: string
+    ): {
         key?: string
         target?: string
     } => {
