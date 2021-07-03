@@ -4,7 +4,9 @@
   "description": "Mongoose Wraper",
   "main": "src/index.ts",
   "scripts": {
-    "test": "node test"
+    "build": "tsc -p .",
+    "lint": "eslint \"src/**/*.ts\"",
+    "prettier-format": "prettier --config .prettierrc \"src/**/*.ts\" --write"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   },
   "homepage": "https://github.com/AlenSaito1/viridian.db#readme",
   "devDependencies": {
+    "@types/lodash": "^4.14.170",
     "@types/node": "^16.0.0",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
